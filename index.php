@@ -14,11 +14,11 @@
     <form action="proceso.php" method="POST">
     
     <div class="form-group mt-5 ml-5 mr-5">
-        <input class="form-control type="text" name="name" required placeholder="Nombre...">
+        <input class="form-control type="text" name="name" required pattern="[A-Za-z]{1,35}" placeholder="Nombre...">
     </div>  
     
     <div class="form-group ml-5 mr-5">
-        <input class="form-control" type="text" name = "lastname" required placeholder="Apellido...">
+        <input class="form-control" type="text" name = "lastname" required pattern="[A-Za-z]{1,35}" placeholder="Apellido...">
     </div>  
 
     <div class = "form-group ml-5 mr-5">
