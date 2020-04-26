@@ -8,7 +8,11 @@ class Libreta
     }
 
     public function GetDescription(){
-        return $this->description;
+        if ($this->description) {
+            return $this->description;
+        }else{
+            Show("<p> Muere de un Ataque al Corazon");
+        }
     }
 
     public function Matar(persona $victim){

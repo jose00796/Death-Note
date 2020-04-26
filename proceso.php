@@ -13,7 +13,9 @@ $name = $_POST['name'];
 $lastname = $_POST['lastname'];
 $description = $_POST['description'];
 
-$obj = new persona($name, $lastname);
-$note = new Libreta($obj, $description);
+$victim = new persona($name, $lastname);
+$note = new Libreta($victim, $description);
 
-$note->Matar($obj);
+echo "<br><center>";
+$note->Matar($victim);
+echo "</center>";
