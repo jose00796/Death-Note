@@ -11,7 +11,9 @@ spl_autoload_register(function($classname){
 
 $name = $_POST['name'];
 $lastname = $_POST['lastname'];
+$description = $_POST['description'];
 
 $obj = new persona($name, $lastname);
-Show("{$obj->GetName()}");
-Show("{$obj->GetLastName()}");
+$note = new Libreta($obj, $description);
+
+$note->Matar($obj);
